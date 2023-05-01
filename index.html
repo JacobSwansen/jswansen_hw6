@@ -30,9 +30,13 @@
     <main>
       <h2>Contact Jacob</h2>
       <p>
-        <a href="https://github.com/JacobSwansen"> Github </a><br>
+        <a href="https://github.com/JacobSwansen">
+          <img src="github_logo.png" alt="Github" width="80" height="50">><br>
+        </a>
         jacobswansen22@gmail.com<br>
-        <a href="https://www.linkedin.com/in/jacob-swansen/"> LinkedIn </a>
+        <a href="https://www.linkedin.com/in/jacob-swansen/"> 
+            <img src="LI.png" alt="LinkedIn" width="60" height="50">
+        </a>
       </p>
       <h2>About Jacob</h2>
       <p>
@@ -51,6 +55,51 @@
         and business analytics. I have also worked jobs and done extracurricular activities. 
         Here are some classes and activities I've participated in.
       </p>
+      <!DOCTYPE html>
+<html>
+<head>
+	<title>jacobswansen22.me</title>
+	<script>
+		function acceptCookies() {
+			// set cookie
+			document.cookie = "accepted=true; expires=Thu, 01 Jan 2099 00:00:00 UTC; path=/";
+			// hide popup
+			document.getElementById("cookie-popup").style.display = "none";
+		}
+
+		window.onload = function() {
+			// check if cookie is already set
+			if (document.cookie.indexOf("accepted=true") === -1) {
+				// show popup
+				document.getElementById("cookie-popup").style.display = "block";
+			}
+		};
+	</script>
+	<style>
+		#cookie-popup {
+			display: none;
+			position: fixed;
+			bottom: 0;
+			left: 0;
+			width: 100%;
+			background-color: #f1f1f1;
+			padding: 10px;
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<!-- Cookie Popup -->
+	<div id="cookie-popup">
+		<p>This website uses cookies to ensure you get the best experience on our website. 
+		<button onclick="acceptCookies()">Accept</button>
+	</div>
+
+	<!-- Rest of your website content -->
+	<h1>Welcome to My Website</h1>
+	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, diam ac egestas tempor, lorem augue faucibus ipsum, a gravida augue tellus ac quam.</p>
+</body>
+</html>
 
       <table>
         <thead>
@@ -92,6 +141,10 @@
       <img src="./jspic1.jpg" alt="Photo" width="400">
       <p>&nbsp;</p>
     </main>
-    <footer>&copy; Jacob Swansen, 2023</footer>
+    <footer>&copy; Jacob Swansen, 2023<br>
+      <a href="./PP"> Privacy Policy </a><br>
+      <a href="./TC"> Terms and Conditions </a><br>
+      <a href="./Cookie"> Cookie Policy </a>
+    </footer>
   </body>
 </html>
